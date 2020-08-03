@@ -16,7 +16,6 @@ body {
   margin: 0;
 }
 body .overlay {
-  /* content: ""; */
   position: absolute;
   top: 0;
   left: 0;
