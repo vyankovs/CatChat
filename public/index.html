@@ -13,73 +13,60 @@
     <link rel="stylesheet" href="css/style.css" />
     <title>ChatKot App</title>
   </head>
-  <body>
-    <div id="img">
-      <div class="img1">
-        <img
-          src="https://images-na.ssl-images-amazon.com/images/I/71N7L0zJkuL.jpg"
-          alt=""
-        />
-      </div>
-      <div class="img2">
-        <img
-          src="https://content.flockrush.com/publishing-uploads/47562_original.jpg?v=63672027140"
-          alt=""
-        />
-      </div>
-      <div class="img3">
-        <img src="https://i.imgur.com/1SGYcMM.gif" alt="" />
-      </div>
-      <div class="img4">
-        <img
-          src="https://img.memecdn.com/cat-programmer_o_2193441.jpg"
-          alt=""
-        />
-      </div>
-      <div class="img5">
-        <img
-          src="https://images-na.ssl-images-amazon.com/images/I/714RSOiAbiL.jpg"
-          alt=""
-        />
-      </div>
-      <div class="img6">
-        <img
-          src="https://forum.soulworker.gameforge.com/attachment/1117-pasted-from-clipboard-png/"
-          alt=""
-        />
-      </div>
-    </div>
-
-    <div class="join-container">
-      <header class="join-header">
-        <h1><i class="fas fa-cat"></i> ChatKot</h1>
-      </header>
-      <main class="join-main">
-        <form action="chat.html">
-          <div class="form-control">
-            <label for="username">Cat Name</label>
-            <input
-              type="text"
-              name="username"
-              id="username"
-              placeholder="Enter your cat name"
-              required
+  <body id="body1">
+    <div class="overlay">
+      <div id="welcomeImg">
+        <h1 class="welcome">Welcome to ChatKot!</h1>
+        <h3 id="place">
+          Place where your cat can finally say everything he thinks of you...
+        </h3>
+        <div class="images">
+          <div>
+            <img src="https://i.imgur.com/1SGYcMM.gif" alt="" class="img3" />
+          </div>
+          <div>
+            <img
+              src="https://images-na.ssl-images-amazon.com/images/I/71N7L0zJkuL.jpg"
+              alt=""
+              class="img3"
             />
           </div>
-          <div class="form-control">
-            <label for="room">Room</label>
-            <select name="room" id="room">
-              <option value="Fluffy room">Fluffy room</option>
-              <option value="Omnomnom room">Omnomnom room</option>
-              <option value="Meow room">Meow room</option>
-              <option value="Sleepy room">Sleepy room</option>
-              <option value="Lazy room">Lazy room</option>
-              <option value="Playground">Playground</option>
-            </select>
-          </div>
-          <button type="submit" class="btn">Join Chat</button>
-        </form>
-      </main>
+        </div>
+      </div>
+      <div>
+        <img src="img/meow.jpg" id="meow" alt="" />
+      </div>
+      <div class="join-container">
+        <header class="join-header">
+          <h1><i class="fas fa-cat"></i> ChatKot</h1>
+        </header>
+        <main class="join-main">
+          <form action="chat.html">
+            <div class="form-control">
+              <label for="username">Cat Name</label>
+              <input
+                type="text"
+                name="username"
+                id="username"
+                placeholder="Enter your cat name"
+                required
+              />
+            </div>
+            <div class="form-control">
+              <label for="room">Room</label>
+              <select name="room" id="room">
+                <option value="Fluffy room">Fluffy room</option>
+                <option value="Omnomnom room">Omnomnom room</option>
+                <option value="Meow room">Meow room</option>
+                <option value="Sleepy room">Sleepy room</option>
+                <option value="Lazy room">Lazy room</option>
+                <option value="Playground">Playground</option>
+              </select>
+            </div>
+            <button type="submit" class="btn">Join Chat</button>
+          </form>
+        </main>
+      </div>
     </div>
   </body>
 </html>

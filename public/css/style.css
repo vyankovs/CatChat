@@ -1,8 +1,8 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
 
 :root {
-  --dark-color-a: #c7d140;
-  --dark-color-b: #d1dd69;
+  --dark-color-a: #f0b434;
+  --dark-color-b: #f0d851;
   --light-color: #fbfccd;
   --success-color: #5cb85c;
   --error-color: #d9534f;
@@ -17,8 +17,51 @@
 body {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
-  background: var(--light-color);
-  margin: 20px;
+  background-image: url(../img/background.jpg);
+  background-size: cover;
+  margin: 0;
+}
+body .overlay {
+  /* content: ""; */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background: rgba(240, 239, 179, 0.9);
+}
+#welcomeImg {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-left: 100px;
+}
+#place {
+  color: rgb(92, 68, 23);
+  font-size: 1.5rem;
+}
+.img3 {
+  border: rgb(223, 122, 40) 1px solid;
+  border-radius: 5px;
+  margin-right: 20px;
+}
+.welcome {
+  color: rgb(248, 95, 24);
+  font-size: 4rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.images {
+  display: flex;
+}
+#meow {
+  width: 400px;
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  border-radius: 10px;
 }
 
 ul {
@@ -128,12 +171,12 @@ a {
 
 /* Join Page */
 .join-container {
-  max-width: 500px;
-  margin: 80px auto;
+  width: 400px;
+  margin: 10px auto;
   color: #fff;
   position: fixed;
-  right: 5px;
-  top: 50px;
+  right: 10px;
+  bottom: 0;
 }
 
 .join-header {
@@ -194,12 +237,9 @@ img {
   width: 380px;
   height: 350px;
 }
-img .img5 {
-  width: 700px;
-}
 
 #img {
   display: grid;
-  grid-template-columns: 380px 380px 380px;
+
   width: 70%;
 }
